@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My HTML5 Assignment</title>
+</head>
+<body>
+
+  <h1>Welcome to My Web Page</h1>
+  <p>HTML5 assignment on Enhanced Form.</p>
+
+  <!-- Unordered List -->
+  <h2>My Hobbies</h2>
+  <ul>
+    <li>Watching Monkeys</li>
+    <li>Coding</li>
+    <li>Playing Video games</li>
+  </ul>
+
+  <!--  Ordered List -->
+  <h2>My Daily Routine</h2>
+  <ol>
+    <li>Wake up</li>
+    <li>Go to Work</li>
+    <li>Join PLP Class at 2:00pm</li>
+  </ol>
+
+  <!-- Table -->
+  <h2>Class Timetable</h2>
+  <table border="1">
+    <tr>
+      <th>Day</th>
+      <th>Subject</th>
+    </tr>
+    <tr>
+      <td>Monday</td>
+      <td>Math</td>
+    </tr>
+    <tr>
+      <td>Tuesday</td>
+      <td>English</td>
+    </tr>
+  </table>
+
+  <!-- Media -->
+  <h2>Cool Views with the Monkeys</h2>
+  <a href="https://www.pexels.com/photo/monkeys-sitting-on-a-railing-5769318/"><img src="https://images.pexels.com/photos/26227730/pexels-photo-26227730.jpeg" alt="Monkeys on a wall" width="300" height="200"></a>
+  <a href="https://www.pexels.com/photo/crab-eating-macaques-sitting-on-wall-26227730/"><img src="https://images.pexels.com/photos/5769318/pexels-photo-5769318.jpeg" alt="Monkeys Sitting on a Railing" width="300" height="auto"></a>
+
+  <h2>My Favorite Song</h2>
+  <audio controls>
+    <source src="./audio/Dax - Lonely Dirt Road (THE FINAL).mp3" type="audio/mpeg">
+    Your browser does not support audio.
+  </audio>
+
+  <!-- HTML5 Form -->
+  <h2>Contact Form</h2>
+  <form action="#" method="post">
+
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email"><br><br>
+
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age" min="10" max="100" required><br><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" placeholder="At least 6 characters" minlength="6" required><br><br>
+
+    <label for="bio">Short Bio:</label><br>
+    <textarea id="bio" name="bio" placeholder="Write something about yourself..." required></textarea><br><br>
+
+    <!-- Gender Radio Buttons -->
+    <p>Gender:</p>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+
+    <!-- Fieldset for contact preference -->
+    <fieldset>
+      <legend>Preferred Contact Method</legend>
+      <input type="radio" id="emailcontact" name="contactmethod" value="email" checked>
+      <label for="emailcontact">Email</label><br>
+      <input type="radio" id="phonecontact" name="contactmethod" value="phone">
+      <label for="phonecontact">Phone</label>
+    </fieldset><br>
+
+    <!-- Dropdown -->
+    <label for="country">Country:</label><br>
+    <select id="country" name="country" required>
+      <option value="">--Choose your country--</option>
+      <option value="kenya">Kenya</option>
+      <option value="uganda">Uganda</option>
+      <option value="tanzania">Tanzania</option>
+    </select><br><br>
+
+    <!-- Read-only field -->
+    <label for="student-id">Student ID (Read Only):</label><br>
+    <input type="text" id="student-id" name="student-id" value="12345" readonly><br><br>
+
+    <input type="submit" value="Submit Form">
+
+  </form>
+  <footer>
+    <p>&copy; 2025 My First Web Page. All rights reserved.</p>
+    <p>Contact: <a href="mailto:kntony1@gmail.com">kmntony1@gmail.com</a></p>
+  </footer>
+</body>
+</html>
